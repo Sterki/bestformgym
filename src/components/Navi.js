@@ -9,7 +9,7 @@ function Navi() {
         Home
       </NavLink>
       <NavLink to="/uber" className="navi__link" activeClassName="active">
-        Uber uns
+        Über uns
       </NavLink>
       <NavLink
         to="/erfolgsgeschichten"
