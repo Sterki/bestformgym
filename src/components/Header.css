@@ -1,0 +1,61 @@
+.header {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+  background-color: white;
+}
+.headernew {
+  transition: ease-in-out 0.4s;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.headernewclass {
+  display: none;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.header__container > img {
+  height: 7rem;
+  object-fit: contain;
+}
+.header__appbar {
+  flex-grow: 1;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+}
+.header__menu {
+  background-color: var(--blue);
+}
+.header__navlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+}
+.header__navlinksnav {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0rem;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  text-align: center;
+  transition: 450ms;
+}
+.header__navlinksnav:hover {
+  background-color: var(--orange);
+}
+.activo {
+  color: white;
+  background-color: var(--orange);
+}

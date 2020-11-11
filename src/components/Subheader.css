@@ -1,0 +1,57 @@
+.subheader {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.subheader__icons {
+  display: flex;
+}
+.subheader__icons > span {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: 450ms;
+}
+.subheader__icons > span:hover {
+  color: #fa6e05;
+}
+.subheader__icons > .MuiSvgIcon-root {
+  margin-left: 1rem;
+  color: #fa6e05;
+}
+.subheader__social {
+  display: none;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .subheader__social {
+    display: flex;
+    align-items: center;
+  }
+  .subheader__icons > p {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: 450ms;
+  }
+  .subheader__icons > .MuiSvgIcon-root {
+    margin-left: 2rem;
+    color: #fa6e05;
+  }
+}
+.subheader__social > p {
+  margin-right: 1.5rem;
+}
+.subheader__social > .MuiSvgIcon-root {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  color: #fa6e05;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 0.2rem;
+  transition: all 0.2s;
+}
+.subheader__social > .MuiSvgIcon-root:hover {
+  background-color: #fa6e05;
+  color: white;
+}

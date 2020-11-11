@@ -1,0 +1,99 @@
+.services__container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.services__info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 10px 10px 0px 0px;
+  height: 100%;
+  width: 25rem;
+  margin: 0rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 5px 10px 2px lightgray;
+}
+
+@media (min-width: 900px) {
+  .services__container {
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .services__info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    width: 25rem;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    box-shadow: 0px 5px 10px 2px lightgray;
+  }
+}
+
+.services__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 1.5rem 4rem 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+.services__title > h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.services__title > span {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.services__content {
+  flex: 1;
+  overflow-wrap: break-word;
+  padding: 1rem 1rem 1rem 0rem;
+}
+.services__button {
+  text-align: center;
+}
+.services__button > button {
+  width: 10rem;
+  border: 1px solid var(--orange);
+  background-color: white;
+  color: var(--orange);
+  border-radius: 7px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.services__button > button:hover {
+  border: 1px solid transparent;
+  background-color: var(--orange);
+  color: white;
+}
+.services__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.services__text > .MuiSvgIcon-root {
+  color: var(--orange);
+  height: 2rem;
+  width: 2rem;
+}

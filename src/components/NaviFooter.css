@@ -1,0 +1,33 @@
+.navifooter {
+  margin: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  display: none;
+}
+@media (min-width: 768px) {
+  .navifooter {
+    margin: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    display: block;
+  }
+}
+.navifooter__link {
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  transition: 450ms;
+}
+.navifooter__link:hover {
+  color: #fa6e05;
+}
+.active {
+  color: #fa6e05;
+}
