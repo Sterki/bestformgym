@@ -15,8 +15,20 @@ function Subheader() {
       </div>
       <div className="subheader__social">
         <span>Folgen Sie uns</span>
-        <FacebookIcon />
-        <InstagramIcon />
+        <a
+          className="subheader__socialicons"
+          href="https://www.facebook.com/BestFormGymAugsburg"
+          target="_blank"
+        >
+          <FacebookIcon />
+        </a>
+        <a
+          className="subheader__socialicons"
+          href="https://www.instagram.com/bestformgym_augsburg/"
+          target="_blank"
+        >
+          <InstagramIcon />
+        </a>
         {/* title */}
         {/* social icons */}
       </div>

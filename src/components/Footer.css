@@ -43,7 +43,7 @@
   font-weight: 600;
   color: white;
 }
-.footer__socialIcons > .MuiSvgIcon-root {
+.footer__socialIconsRule > .MuiSvgIcon-root {
   color: white;
   cursor: pointer;
   height: 2rem;
@@ -53,7 +53,7 @@
   padding: 0.5rem;
   transition: 450ms;
 }
-.footer__socialIcons > .MuiSvgIcon-root:hover {
+.footer__socialIconsRule > .MuiSvgIcon-root:hover {
   background-color: var(--orange);
   border-radius: 25px;
 }

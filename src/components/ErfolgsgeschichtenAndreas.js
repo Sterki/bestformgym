@@ -4,7 +4,7 @@ import "./Erfolgsgeschichten_anton.css";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { useHistory } from "react-router-dom";
 
-function Erfolgsgeschichten_andreas() {
+function ErfolgsgeschichtenAndreas() {
   const history = useHistory();
   const handleClick = () => {
     history.push("/erfolgsgeschichten");
@@ -50,4 +50,4 @@ function Erfolgsgeschichten_andreas() {
   );
 }
 
-export default Erfolgsgeschichten_andreas;
+export default ErfolgsgeschichtenAndreas;

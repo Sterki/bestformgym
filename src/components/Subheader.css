@@ -33,17 +33,17 @@
     cursor: pointer;
     transition: 450ms;
   }
-  .subheader__icons > .MuiSvgIcon-root {
-    margin-left: 2rem;
+  .subheader__socialicons > .MuiSvgIcon-root {
+    margin-left: 1rem;
     color: #fa6e05;
   }
 }
 .subheader__social > p {
   margin-right: 1.5rem;
 }
-.subheader__social > .MuiSvgIcon-root {
+.subheader__socialicons > .MuiSvgIcon-root {
   margin-left: 0.5rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   cursor: pointer;
   color: #fa6e05;
   background-color: transparent;
@@ -51,7 +51,7 @@
   padding: 0.2rem;
   transition: all 0.2s;
 }
-.subheader__social > .MuiSvgIcon-root:hover {
+.subheader__socialicons > .MuiSvgIcon-root:hover {
   background-color: #fa6e05;
   color: white;
 }

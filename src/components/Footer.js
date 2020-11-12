@@ -3,6 +3,7 @@ import "./Footer.css";
 import NaviFooter from "./NaviFooter";
 import { Facebook, Instagram } from "@material-ui/icons";
 import CopyrightIcon from "@material-ui/icons/Copyright";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,8 +25,20 @@ function Footer() {
       <div className="footer__social">
         <p>Folgen Sie Uns</p>
         <div className="footer__socialIcons">
-          <Facebook />
-          <Instagram />
+          <a
+            className="footer__socialIconsRule"
+            href="https://www.facebook.com/BestFormGymAugsburg"
+            target="_blank"
+          >
+            <Facebook />
+          </a>
+          <a
+            className="footer__socialIconsRule"
+            href="https://www.instagram.com/bestformgym_augsburg/"
+            target="_blank"
+          >
+            <Instagram />
+          </a>
         </div>
       </div>
       <div className="footer__copyright">

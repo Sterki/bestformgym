@@ -9,18 +9,36 @@ import Footer from "./components/Footer";
 import Historys from "./components/Historys";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About";
-import Erfolgsgeschichten_anton from "./components/Erfolgsgeschichten_anton";
-import Erfolgsgeschichten_jonas from "./components/Erfolgsgeschichten_jonas";
-import Erfolgsgeschichten_arthur from "./components/Erfolgsgeschichten_arthur";
-import Erfolgsgeschichten_max from "./components/Erfolgsgeschichten_max";
-import Erfolgsgeschichten_lenas from "./components/Erfolgsgeschichten_lenas";
-import Erfolgsgeschichten_andreas from "./components/Erfolgsgeschichten_andreas";
+import ErfolgsgeschichtenAnton from "./components/ErfolgsgeschichtenAnton";
+import ErfolgsgeschichtenJonas from "./components/ErfolgsgeschichtenJonas";
+import ErfolgsgeschichtenArthur from "./components/ErfolgsgeschichtenArthur";
+import ErfolgsgeschichtenMax from "./components/ErfolgsgeschichtenMax";
+import ErfolgsgeschichtenLenas from "./components/ErfolgsgeschichtenLenas";
+import ErfolgsgeschichteAndreas from "./components/ErfolgsgeschichtenAndreas";
 import Services from "./components/Services";
+import Training from "./components/Training";
+import Kontakt from "./components/Kontakt";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/kontakt">
+          <div className="app">
+            <Subheader />
+            <Header />
+            <Kontakt />
+            <Footer />
+          </div>
+        </Route>
+        <Route path="/trainingszeiten">
+          <div className="app">
+            <Subheader />
+            <Header />
+            <Training />
+            <Footer />
+          </div>
+        </Route>
         <Route path="/service">
           <div className="app">
             <Subheader />
@@ -33,7 +51,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_andreas />
+            <ErfolgsgeschichteAndreas />
             <Footer />
           </div>
         </Route>
@@ -41,7 +59,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_lenas />
+            <ErfolgsgeschichtenLenas />
             <Footer />
           </div>
         </Route>
@@ -49,7 +67,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_max />
+            <ErfolgsgeschichtenMax />
             <Footer />
           </div>
         </Route>
@@ -57,7 +75,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_arthur />
+            <ErfolgsgeschichtenArthur />
             <Footer />
           </div>
         </Route>
@@ -65,7 +83,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_jonas />
+            <ErfolgsgeschichtenJonas />
             <Footer />
           </div>
         </Route>
@@ -73,7 +91,7 @@ function App() {
           <div className="app">
             <Subheader />
             <Header />
-            <Erfolgsgeschichten_anton />
+            <ErfolgsgeschichtenAnton />
             <Footer />
           </div>
         </Route>
