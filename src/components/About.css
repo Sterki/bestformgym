@@ -262,7 +262,7 @@
   top: 25rem;
   left: 5rem;
 }
-.about__socialicons > .MuiSvgIcon-root {
+.about__social__materialIcons > .MuiSvgIcon-root {
   color: var(--orange);
   height: 2rem;
   width: 2rem;
@@ -273,7 +273,7 @@
   padding: 0.4rem;
   transition: 450ms;
 }
-.about__socialicons > .MuiSvgIcon-root:hover {
+.about__social__materialIcons > .MuiSvgIcon-root:hover {
   background-color: var(--orange);
   color: white;
 }

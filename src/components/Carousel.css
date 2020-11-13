@@ -24,7 +24,7 @@
   padding-left: 0rem;
   margin-left: 9rem;
 }
-.carousel__button > button {
+.carousel__linkbutton > button {
   padding: 0.5rem;
   min-width: 7rem; /*fa6e05*/
   border: 1px solid white;
@@ -64,7 +64,7 @@
     padding-left: 3rem;
     margin-left: 0rem;
   }
-  .carousel__button > button {
+  .carousel__linkbutton > button {
     padding: 1rem;
     min-width: 10rem; /*fa6e05*/
     border: 1px solid white;
@@ -83,7 +83,7 @@
   width: 100%;
 }
 
-.carousel__button > button:hover {
+.carousel__linkbutton > button:hover {
   color: white;
   background-color: #fa6e05;
   border: 1px solid #fa6e05;

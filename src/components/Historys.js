@@ -15,7 +15,7 @@ function Historys() {
       <BannerPrincipal title="Erfolgsgeschichten" subtitle="" />
       <div className="history__container">
         <div className="history__containerfoto">
-          <div className="historys__foto1">
+          <div className="historys__foto1" data-aos="zoom-out-right">
             <p>Anton Makarenko</p>
             <img src={photo1} alt="fotoanton" />
             <button>
@@ -27,7 +27,7 @@ function Historys() {
             {/* title */}
             {/* button */}
           </div>
-          <div className="historys__foto1">
+          <div className="historys__foto1" data-aos="zoom-out-down">
             <p>Jonas</p>
             <img src={photo2} alt="jonasfoto" />
             <button>
@@ -39,7 +39,7 @@ function Historys() {
             {/* title */}
             {/* button */}
           </div>
-          <div className="historys__foto1">
+          <div className="historys__foto1" data-aos="zoom-out-left">
             <p>Artur</p>
             <img src={photo3} alt="arthurfoto" />
             <button>
@@ -56,7 +56,7 @@ function Historys() {
           </div>
         </div>
         <div className="history__containerfoto">
-          <div className="historys__foto1">
+          <div className="historys__foto1" data-aos="zoom-out-right">
             <p>Max</p>
             <img src={photo4} alt="maxfoto" />
             <button>
@@ -68,7 +68,7 @@ function Historys() {
             {/* title */}
             {/* button */}
           </div>
-          <div className="historys__foto1">
+          <div className="historys__foto1" data-aos="fade-up">
             <p>Lenas</p>
             <img src={photo5} alt="lenasfoto" />
             <button>
@@ -80,8 +80,8 @@ function Historys() {
             {/* title */}
             {/* button */}
           </div>
-          <div className="historys__foto1">
-            <p>Andreas (Name geändert) </p>
+          <div className="historys__foto1" data-aos="zoom-out-left">
+            <p>Andreas </p>
             <img src={photo6} alt="andreasfoto" />
             <button>
               <Link

@@ -6,6 +6,7 @@ import "react-awesome-slider/dist/styles.css";
 import slider from "./../static/images/slider.png";
 import slider2 from "./../static/images/slider2.jpg";
 import slider3 from "./../static/images/slider3.jpg";
+import { Link } from "react-router-dom";
 
 function Carousel() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -24,7 +25,9 @@ function Carousel() {
               <h2>Kontakt</h2>
             </div>
             <div className="carousel__button">
-              <button>Mehr</button>
+              <Link to="/kontakt" className="carousel__linkbutton">
+                <button>Mehr</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -35,7 +38,9 @@ function Carousel() {
               <h2>Erfolgsgeschichten </h2>
             </div>
             <div className="carousel__button">
-              <button>Mehr</button>
+              <Link className="carousel__linkbutton" to="/erfolgsgeschichten">
+                <button>Mehr</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,7 +51,9 @@ function Carousel() {
               <h2>Service</h2>
             </div>
             <div className="carousel__button">
-              <button>Mehr</button>
+              <Link className="carousel__linkbutton" to="/service">
+                <button>Mehr</button>
+              </Link>
             </div>
           </div>
         </div>

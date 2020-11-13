@@ -7,7 +7,7 @@ function Home() {
     <div className="home">
       <h1>BestFormGym</h1>
       <div className="home__container">
-        <div className="home__info1">
+        <div className="home__info1" data-aos="zoom-in">
           <div className="home__parraf">
             <DoneAllIcon />
             <p>
@@ -31,7 +31,7 @@ function Home() {
           {/* info1 */}
           {/* info1 */}
         </div>
-        <div className="home__info1">
+        <div className="home__info1" data-aos="zoom-in">
           <div className="home__parraf">
             <DoneAllIcon />
             <p>

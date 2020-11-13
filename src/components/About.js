@@ -6,6 +6,7 @@ import Demian from "./../static/images/Demian.jpg";
 import Nik from "./../static/images/Nik.jpg";
 import { Facebook, Instagram } from "@material-ui/icons";
 import BannerPrincipal from "./BannerPrincipal";
+import { Link } from "@material-ui/core";
 
 function About() {
   return (
@@ -15,10 +16,10 @@ function About() {
         subtitle="Was dich im BestForm Gym erwartet"
       />
       <div className="about__container">
-        <div className="about__photo">
+        <div className="about__photo" data-aos="zoom-in-right">
           <img src={about_inner_1} alt="teamfoto" />
         </div>
-        <div className="about__uberuns">
+        <div className="about__uberuns" data-aos="zoom-in-left">
           {/* some text */}
           <h1>Über uns</h1>
           <h2>BestFormGym</h2>
@@ -36,7 +37,7 @@ function About() {
         </div>
       </div>
       <div className="about__container2">
-        <div className="about__erwartet">
+        <div className="about__erwartet" data-aos="zoom-in-right">
           <h1>Was du bei uns bekommst</h1>
           <div className="about__parraferwartet">
             <DoneAllIcon />
@@ -81,7 +82,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="about__erwartet2">
+        <div className="about__erwartet2" data-aos="zoom-in-left">
           <h1>Was du bei uns nicht bekommst</h1>
           <div className="about__parraferwartet">
             <DoneAllIcon />
@@ -116,15 +117,27 @@ function About() {
       </div>
       <div className="about__container3">
         <h1>Trainer</h1>
-        <div className="about__trainers">
+        <div className="about__trainers" data-aos="zoom-out">
           <div className="about__trainer1">
             <img src={Demian} alt="demianfoto" />
             <div className="about__name">
               <h4>Demian Kanzler</h4>
             </div>
             <div className="about__socialicons">
-              <Facebook />
-              <Instagram />
+              <a
+                href="https://www.facebook.com/demian.kanzler.568"
+                target="_blank"
+                className="about__social__materialIcons"
+              >
+                <Facebook />
+              </a>
+              <a
+                href="https://www.instagram.com/stronglethics"
+                target="_blank"
+                className="about__social__materialIcons"
+              >
+                <Instagram />
+              </a>
             </div>
           </div>
           <div className="about__trainer1">
@@ -133,8 +146,20 @@ function About() {
               <h4>Nikita Yagolnitser</h4>
             </div>
             <div className="about__socialicons">
-              <Facebook />
-              <Instagram />
+              <a
+                href="https://www.facebook.com/nikita.yagolnitser"
+                target="_blank"
+                className="about__social__materialIcons"
+              >
+                <Facebook />
+              </a>
+              <a
+                href="https://www.instagram.com/nikpoweryourpersonalcoach/"
+                target="_blank"
+                className="about__social__materialIcons"
+              >
+                <Instagram />
+              </a>
             </div>
           </div>
         </div>

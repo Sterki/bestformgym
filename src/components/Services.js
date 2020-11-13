@@ -2,12 +2,13 @@ import React from "react";
 import BannerPrincipal from "./BannerPrincipal";
 import "./Services.css";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
     <div className="services">
       <BannerPrincipal title="Services" subtitle="" />
-      <div className="services__container">
+      <div className="services__container" data-aos="zoom-in">
         <div className="services__info">
           <div className="services__title">
             <h2>Gruppentraining</h2>
@@ -48,7 +49,9 @@ function Services() {
             </p>
           </div>
           <div className="services__button">
-            <button>Kontakt</button>
+            <Link to="/kontakt" className="services__buttonlink">
+              <button>Kontakt</button>
+            </Link>
           </div>
 
           {/* title */}
@@ -97,7 +100,9 @@ function Services() {
             </p>
           </div>
           <div className="services__button">
-            <button>Kontakt</button>
+            <Link to="/kontakt" className="services__buttonlink">
+              <button>Kontakt</button>
+            </Link>
           </div>
 
           {/* title */}
@@ -140,7 +145,9 @@ function Services() {
             </p>
           </div>
           <div className="services__button">
-            <button>Kontakt</button>
+            <Link to="/kontakt" className="services__buttonlink">
+              <button>Kontakt</button>
+            </Link>
           </div>
 
           {/* title */}

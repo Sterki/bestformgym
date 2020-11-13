@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,7 +75,9 @@ function Header() {
       {dimensions.width >= 900 ? (
         <div className="header" id="headernew">
           <div className="header__container">
-            <img id="headerid" src={logoempresa} alt="logoempresa" />
+            <Link to="/" className="header__img">
+              <img id="headerid" src={logoempresa} alt="logoempresa" />
+            </Link>
             <Navi />
           </div>
         </div>

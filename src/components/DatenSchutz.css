@@ -1,0 +1,30 @@
+.datenschutz {
+  padding: 1rem;
+}
+.datenschutz > h1 {
+  margin-bottom: 2rem;
+  color: var(--blue);
+}
+.datenschutz__1 {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+.datenschutz__1 > h3 {
+  color: var(--gray);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.datenschutz__1 > h2 {
+  color: var(--orange);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.datenschutz__1 > span {
+  color: var(--gray);
+  font-weight: 900;
+}
+.datenschutz__1 > p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

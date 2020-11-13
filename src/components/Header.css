@@ -21,9 +21,10 @@
   padding: 0.5rem;
   justify-content: space-between;
 }
-.header__container > img {
+.header__img > img {
   height: 7rem;
   object-fit: contain;
+  outline: none;
 }
 .header__appbar {
   flex-grow: 1;

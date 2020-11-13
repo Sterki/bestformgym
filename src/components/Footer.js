@@ -18,9 +18,21 @@ function Footer() {
         <NaviFooter />
       </div>
       <div className="footer__daten">
-        <p>Datenschutzerklärung</p>
-        <p>Agbs</p>
-        <p>Impresum</p>
+        <p>
+          <Link to="/datenschutz" target="_blank" className="footer__links">
+            Datenschutzerklärung
+          </Link>
+        </p>
+        <p>
+          <Link to="/agbs" target="_blank" className="footer__links">
+            Agbs
+          </Link>
+        </p>
+        <p>
+          <Link to="/impressum" target="_blank" className="footer__links">
+            Impresum
+          </Link>
+        </p>
       </div>
       <div className="footer__social">
         <p>Folgen Sie Uns</p>

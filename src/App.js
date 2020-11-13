@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Subheader from "./components/Subheader";
@@ -18,11 +18,41 @@ import ErfolgsgeschichteAndreas from "./components/ErfolgsgeschichtenAndreas";
 import Services from "./components/Services";
 import Training from "./components/Training";
 import Kontakt from "./components/Kontakt";
+import DatenSchutz from "./components/DatenSchutz";
+import Agbs from "./components/Agbs";
+import Impressum from "./components/Impressum";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <Router>
       <Switch>
+        <Route path="/impressum">
+          <div className="app">
+            <Subheader />
+            <Impressum />
+            <Footer />
+          </div>
+        </Route>
+        <Route path="/agbs">
+          <div className="app">
+            <Subheader />
+            <Agbs />
+            <Footer />
+          </div>
+        </Route>
+        <Route path="/datenschutz">
+          <div className="app">
+            <Subheader />
+            <DatenSchutz />
+            <Footer />
+          </div>
+        </Route>
         <Route path="/kontakt">
           <div className="app">
             <Subheader />
