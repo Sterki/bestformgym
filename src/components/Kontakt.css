@@ -29,6 +29,22 @@
   width: 2rem;
   margin-left: 1rem;
 }
+.contact_divsucces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_divsucces > .MuiCircularProgress-root {
+  margin-bottom: 1rem;
+}
+.contact__alert {
+  display: flex;
+  justify-content: center;
+}
+.contact_divsucces > .MuiAlert-root {
+  margin-bottom: 1rem;
+}
 .kontakt__icon > .MuiSvgIcon-root:hover {
   background-color: var(--orange);
   border: 1px solid transparent;

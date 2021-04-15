@@ -11,6 +11,9 @@ import { CircularProgress } from "@material-ui/core";
 function Kontakt() {
   const [enviando, setEnviando] = useState(false);
   const [emailsend, setEmailSend] = useState("");
+  const [errorForm, saveError] = useState("");
+  const [spinner, setSpinner] = useState(false);
+  const [sended, setSendedEmail] = useState("");
   const [datos, setDatos] = useState({
     user_name: "",
     user_phone: "",
@@ -29,30 +32,32 @@ function Kontakt() {
       subject.trim() === "" ||
       message.trim() === ""
     ) {
-      return;
-    }
-    setEnviando(true);
-    emailjs
-      .sendForm(
-        "contact_best", // YOUR SERVICE_ID
-        "best-form-gym", // YOUR TEMPLATE_ID
-        e.target, // YOUR DATA FROM ALL OF UR INPUTS
-        "user_zvdh1HirL2WmVAx3yIl4H" // THIS IS UR USER ID I MEAN INTEGRATION ID
-      )
-      .then((result) => {
-        setEmailSend("Email wurde erfolgreich Versendet");
-        setEnviando(false);
-        setDatos({
-          user_name: "",
-          user_email: "",
-          user_phone: "",
-          subject: "",
-          message: "",
+      saveError("Alle Felder sind erforderlich!");
+      setTimeout(() => {
+        return saveError("");
+      }, 4000);
+    } else {
+      setSpinner(true);
+      setTimeout(() => {
+        setSpinner(false);
+      }, 1200);
+      emailjs
+        .sendForm(
+          "contact_best", // YOUR SERVICE_ID
+          "best-form-gym", // YOUR TEMPLATE_ID
+          e.target, // YOUR DATA FROM ALL OF UR INPUTS
+          "user_zvdh1HirL2WmVAx3yIl4H" // THIS IS UR USER ID I MEAN INTEGRATION ID
+        )
+        .then((result) => {
+          setSendedEmail("Email wurde erfolgreich Versendet");
+          setTimeout(() => {
+            return setSendedEmail("");
+          }, 3000);
+        })
+        .catch((error) => {
+          console.log("something went wrong!!", error.text);
         });
-      })
-      .catch((error) => {
-        console.log("something went wrong!!", error.text);
-      });
+    }
   };
 
   const handleChange = (e) => {
@@ -91,6 +96,11 @@ function Kontakt() {
           <div className="kontakt__title">
             <h1>Kontaktformular </h1>
             <h2>Füllen Sie das folgende Formular aus</h2>
+            {errorForm ? (
+              <div className="contact__alert">
+                <Alert severity="error">{errorForm}</Alert>
+              </div>
+            ) : null}
           </div>
           <form onSubmit={handleSubmit} id="best-form-gym">
             <div className="kontakt__inputs">
@@ -134,16 +144,10 @@ function Kontakt() {
                 onChange={handleChange}
               />
             </div>
-            {enviando ? (
-              <div className="kontakt__enviando">
-                <CircularProgress />
-              </div>
-            ) : null}
-            {emailsend ? (
-              <div className="kontakt__messageemail">
-                <Alert severity="success">{emailsend}</Alert>
-              </div>
-            ) : null}
+            <div className="contact_divsucces">
+              {spinner ? <CircularProgress /> : null}
+              {sended ? <Alert severity="success">{sended}</Alert> : null}
+            </div>
             <div className="kontakt__button">
               <button type="submit">Sende Jetzt</button>
             </div>
